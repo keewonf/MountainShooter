@@ -3,3 +3,6 @@ __pycache__/
 *.pyo
 *.pyd
 DBScore
+MountainShooter.egg-info
+setup.py
+build
