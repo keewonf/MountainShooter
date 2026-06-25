@@ -6,7 +6,6 @@ import sys
 from pygame import Surface
 import pygame
 
-
 from code.Const import C_CYAN, C_GREEN, C_WHITE, EVENT_ENEMY, EVENT_TIMEOUT, MENU_OPTION, SPAWN_TIME, TIMEOUT_STEP, WIN_HEIGHT, TIMEOUT_LEVEL
 from code.Enemy import Enemy
 from code.Entity import Entity
@@ -34,6 +33,7 @@ class Level:
     
     def run(self, player_score: list[int]):
         pygame.mixer_music.load(f'./asset/{self.name}.mp3')
+        pygame.mixer_music.set_volume(0.3)
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
         while True:
