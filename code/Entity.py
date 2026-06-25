@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC, abstractmethod
 import pygame.image
-
 from code.Const import ENTITY_DAMAGE, ENTITY_HEALTH, ENTITY_SCORE
 
 class Entity(ABC):
@@ -17,6 +16,5 @@ class Entity(ABC):
         self.last_dmg = 'None'
     
     @abstractmethod
-    def move(self, ):
+    def move(self):
         pass
-    
